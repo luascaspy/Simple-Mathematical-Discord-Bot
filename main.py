@@ -11,7 +11,6 @@ with open('config/config.json') as e:
     infos = json.load(e)
     TOKEN = infos['token']
     prefixo = infos['prefix']
-    owner_id = infos['owner_id']
 
 intents = discord.Intents.all()
 client = commands.Bot(command_prefix=prefixo, intents=intents)
