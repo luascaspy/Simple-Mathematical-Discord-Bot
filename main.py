@@ -26,7 +26,7 @@ async def on_ready():
 #MathBot Commands
 @client.command()
 async def mathbot(ctx):
-    await ctx.send(f'Hi {ctx.author.mention}, my name is Math! My job is to help you with math. Type .commands!')
+    await ctx.send(f'Hi {ctx.author.mention}, my name is Math! My job is to help you with math. Type .commands')
 
 @client.command()
 async def commands(ctx):
