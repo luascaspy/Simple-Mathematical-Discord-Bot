@@ -1,7 +1,7 @@
 import discord
 import json
-from discord.ext import commands
 import math as mh
+from discord.ext import tasks, commands
 
 #Bot made by Luascas
 #https://github.com/luascaspy
@@ -20,6 +20,8 @@ client = commands.Bot(command_prefix=prefixo, intents=intents)
 @client.event
 async def on_ready():
     print('Hi, Human. Logged in as {0.user}'.format(client))
+    bot_status = ".commands"
+    await client.change_presence(activity=discord.Game(bot_status))   
 
 #MathBot Commands
 @client.command()
